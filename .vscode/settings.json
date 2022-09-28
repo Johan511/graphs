@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "list": "cpp",
+        "optional": "cpp",
+        "ratio": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "variant": "cpp",
+        "*.tcc": "cpp",
+        "*.tpp": "cpp"
+    }
+}
