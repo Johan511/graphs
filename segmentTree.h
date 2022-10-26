@@ -1,4 +1,3 @@
-// #include  "segmentTree.h"
 #include <bits/stdc++.h>
 using namespace std;
 class Node
@@ -31,10 +30,11 @@ class SegementTree
     void __postOrder(Node *it);
     void __visit(Node *it);
 
-public:
-    SegementTree(std::vector<int> const &v);
     int query(int l, int r);
     // l inclusive, r exclusive
+
+public:
+    SegementTree(std::vector<int> const &v);
 };
 
 int SegementTree::isContained(pair<int, int> parent, pair<int, int> possible_child)
@@ -138,11 +138,4 @@ int SegementTree::query(int l, int r)
         }
     }
     return sum;
-}
-int main()
-{
-    std::vector<int> v = {1, 2, 3, 4, 5};
-    SegementTree t(v);
-    t.query(0, 3);
-    return 0;
 }
